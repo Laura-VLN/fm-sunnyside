@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 body {
   margin: 0 auto;
+  max-width: 375px;
   background-color: #FFFBF8;
   font-family: 'Barlow', sans-serif;
   font-size: 1.125rem;
@@ -252,7 +253,7 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-  main {
+  body {
     max-width: 1440px;
   }
   h1 {
