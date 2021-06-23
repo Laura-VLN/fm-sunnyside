@@ -2,7 +2,11 @@ let width = window.innerWidth;
 var mobileSources = [];
 var desktopSources = [
     "assets/images/desktop/image-transform.jpg", 
-    "assets/images/desktop/image-stand-out.jpg"
+    "assets/images/desktop/image-stand-out.jpg",
+    "assets/images/desktop/image-gallery-milkbottles.jpg",
+    "assets/images/desktop/image-gallery-orange.jpg",
+    "assets/images/desktop/image-gallery-cone.jpg",
+    "assets/images/desktop/image-gallery-sugarcubes.jpg"
 ];
 
 function displayWindowSize() {
@@ -20,11 +24,11 @@ function displayImg() {
     });
     
     if (width >= 1440) {
-        for (let i = 1; i < 3; i++) {
+        for (let i = 1; i < 7; i++) {
             document.getElementById("split-card-"+i).src = desktopSources[i-1];
         }
     } else {
-        for (let i = 1; i < 3; i++) {
+        for (let i = 1; i < 7; i++) {
             document.getElementById("split-card-"+i).src = mobileSources[i-1];
         }
     }

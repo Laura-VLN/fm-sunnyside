@@ -80,6 +80,14 @@ header {
   display: none;
 }
 
+.list-nav a {
+  color: white;
+}
+
+.list-nav a:last-child {
+  color: black;
+}
+
 .title-sup {
   position: absolute;
   z-index: 2;
@@ -106,6 +114,14 @@ header {
 }
 
 .card-text {
+  height: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 1.5rem 3.5rem 1.5rem;
 }
 
@@ -114,6 +130,7 @@ header {
   font-family: 'Fraunces', serif;
   font-weight: 900;
   color: black;
+  margin-top: 1.5rem;
 }
 
 .services {
@@ -211,6 +228,10 @@ footer {
           justify-content: space-between;
 }
 
+.footer-nav a {
+  color: #458c7e;
+}
+
 .social-icons {
   margin: 0 6.5rem 4rem 6.5rem;
   display: -webkit-box;
@@ -231,42 +252,53 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+  main {
+    max-width: 1440px;
+  }
   h1 {
-    margin: 5rem 0 8.5rem 0;
-    color: white;
+    margin: 5rem 0 6rem 0;
     letter-spacing: 0.7rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Fraunces', serif;
-    font-size: 5rem;
+    font-size: 3.5rem;
+  }
+  h2 {
+    text-align: left;
+    font-size: 3.5rem;
+  }
+  h3 {
+    margin: 1rem 0 2.5rem 0;
+    font-size: 1.8rem;
+  }
+  h4 {
+    margin: 11rem 0 0.5rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
   }
   header {
-    height: 79.5rem;
+    height: 60rem;
     background-image: url("../images/desktop/image-header.jpg");
-    background-size: cover;
-    background-position: center center;
   }
-  header .header-logo {
-    width: 20%;
+  .header-logo {
+    width: 15%;
+    height: 15%;
   }
-  header .header-nav {
+  .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 5rem 4rem 7.5rem 4rem;
+    margin: 3rem 3rem 1rem 3rem;
   }
-  header .burger-icon {
+  .burger-icon {
     display: none;
   }
-  header .menu {
+  .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header .list-nav {
+  .list-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -277,17 +309,17 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     text-align: center;
   }
-  header .list-nav li {
-    margin-right: 2rem;
+  .list-nav li {
+    margin-left: 2.5rem;
   }
-  header .contact-nav {
-    width: 12rem;
-    height: 4rem;
+  .contact-nav {
+    width: 9.5rem;
+    height: 3.5rem;
     font-family: 'Fraunces', serif;
-    font-size: 1.55rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     background-color: white;
     color: black;
@@ -302,14 +334,141 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .title-sup {
-    margin-left: 27.5rem;
+  .title-sup {
+    margin: 4rem 0 0 21rem;
   }
-  header .title-arrow {
+  .title-arrow {
     width: 5%;
   }
-  header .split-card {
-    display: none;
+  .split-card img {
+    width: 50%;
+  }
+  .card-text {
+    width: 50%;
+    text-align: left;
+    margin: 4rem 0rem 0rem 0rem;
+    padding: 0 10rem 0 10rem;
+  }
+  .card-text p {
+    width: 110%;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .card-text a {
+    font-size: 1rem;
+  }
+  #card-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #card-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .service-text {
+    margin: 0 10rem 0 10rem;
+    padding-top: 27rem;
+  }
+  .service-text p {
+    font-size: rem;
+    line-height: 1.5rem;
+  }
+  .first-service {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  .second-service {
+    padding: 0 3.29rem 0 3.29rem;
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+  .testimonials-all {
+    margin: 0 8rem 0 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonials img {
+    width: 6rem;
+    margin-top: 6rem;
+  }
+  .testimonial-text {
+    margin: 4rem 1.9rem 4rem 1.9rem;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  .testimonial-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  .testimonial-function {
+    font-size: 0.9rem;
+  }
+  .bloc-images {
+    margin-top: 14rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bloc-images img {
+    width: 25%;
+  }
+  .footer-logo {
+    width: 12%;
+    margin-top: 6.5rem;
+  }
+  .footer-nav ul {
+    margin: 2.5rem 35rem 5rem 35rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-nav a {
+    font-size: 1.2rem;
+    color: #458c7e;
+  }
+  .social-icons {
+    margin: 0 39.5rem 4rem 39.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .attribution {
+    margin-bottom: 5rem;
+  }
+  .attribution a {
+    color: #25564b;
+    text-decoration: underline;
   }
 }
 /*# sourceMappingURL=style.css.map */
